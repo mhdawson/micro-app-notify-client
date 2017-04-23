@@ -1,0 +1,36 @@
+{
+  "name": "micro-app-notify-client",
+  "version": "0.0.1",
+  "description": "client to send notifications though sms and other means",
+  "main": "lib/client js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"Error: cannot start npm\" && exit 1"
+  },
+  "dependencies": {
+    "mqtt": "~1.6.3",
+    "twilio": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhdawson/micro-app-notify-client.git"
+  },
+  "keywords": [
+    "iot",
+    "mqtt",
+    "sms",
+    "micro-app"
+  ],
+  "author": "Michael Dawson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhdawson/micro-app-notify-clinet/issues"
+  },
+  "homepage": "https://github.com/mhdawson/micro-app-notify-client#readme",
+  "contributors": [
+    {
+      "name": "Michael Dawson",
+      "email": "mdawson@devrus.com"
+    }
+  ]
+}
