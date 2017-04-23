@@ -2,7 +2,7 @@
   "name": "micro-app-notify-client",
   "version": "0.0.1",
   "description": "client to send notifications though sms and other means",
-  "main": "lib/client js",
+  "main": "lib/client.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "echo \"Error: cannot start npm\" && exit 1"
