@@ -1,6 +1,6 @@
 {
   "name": "micro-app-notify-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "client to send notifications though sms and other means",
   "main": "lib/client.js",
   "scripts": {
