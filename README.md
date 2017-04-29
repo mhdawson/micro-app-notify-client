@@ -38,7 +38,7 @@ parameter is the message to be sent.
 # Configuration
 
 Configuration for the notify client is done through a
-`notify` element within the json configuration file.
+`notify` element within the configuration object.
 That element can optionally include:
 
 * mqttSmsBridge
@@ -47,7 +47,7 @@ That element can optionally include:
 
 provider entries. If an entry is absent, then that provider
 is not used for notifications. If the entry is present
-the it must have a field called `enabled`.  If the
+then it should have a field called `enabled`.  If the
 value for this field is `true` then a notification
 will be send using that provider.
 
@@ -69,10 +69,10 @@ The options for each of the provider entries are:
     be sent using this provider.
   * user - voip.ms API userid.
   * password - voip.ms API password.
-  * did - did(number) from which the SMS will be sent.
+  * did - voip.ms did(number) from which the SMS will be sent.
   * dst - number to which the SMS will be sent.
 
-*twilio
+* twilio
   * enabled - set to true if you want notifications to
     be sent using this provider.
   * accountSID - twilio account ID.
@@ -80,7 +80,8 @@ The options for each of the provider entries are:
   * toNumber - number to which the SMS will be sent.
   * fromNumber - number from which the SMS will be sent.
 
-As an example with the sentive bits removed:
+An example of a json file that can be read in to make the
+configuration object (with the sensitive bits masked):
 
 ```
 {
@@ -117,6 +118,3 @@ or
 ```
 npm install https://github.com/mhdawson/micro-app-notify-client.git
 ```
-
-then add the required entries to the configuration object that
-will be passed to the `sendNotification` call.
